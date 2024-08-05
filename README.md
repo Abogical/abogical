@@ -1,4 +1,4 @@
-<h1><img style="vertical-align: middle;" alt="Logo" src="cd-circle.svg"/> <span style="vertical-align: middle;">Abdel-Rahman Abdel-Rahman</span></h1>
+# ![Logo](cd-circle.svg) Abdel-Rahman Abdel-Rahman
 
 *abogical@gmail.com* | [*Website*](https://abogic.al) | [*LinkedIn*](https://linkedin.com/in/Abogical) | [*GitLab*](https://gitlab.com/Abogical)
 
