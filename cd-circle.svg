@@ -1,0 +1,42 @@
+<svg width="50" height="auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-102.5 -102.5 205 205">
+	<defs>
+		<polygon id="spoke" points="-100,150 50,0 12.5,150"/>
+		<rect id="all" x="-102.5" y="-102.5" width="205" height="205" />
+		<circle id="circle" r="102.5" fill="white"/>
+	</defs>
+	<mask id="arcify">
+		<use fill="black" xlink:href="#all"/>
+		<polygon points="100,-100 25,-100 -25,100 -100,100" fill="white">
+      <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 0 0"
+      to="360 0 0"
+      dur="5s"
+      repeatCount="indefinite" />
+    </polygon>
+	</mask>
+	<mask id="spokeBorder">
+		<use fill="white" xlink:href="#all"/>
+		<use stroke="black" stroke-width="25" stroke-linejoin="round" xlink:href="#spoke"/>
+	</mask>
+	<mask id="circleMask">
+		<use fill="black" xlink:href="#all"/>
+		<use xlink:href="#circle"/>
+	</mask>
+	<use xlink:href="#circle"/>
+	<circle r="5"/>
+	<g fill="transparent" stroke="black">
+		<use stroke-width="5" mask="url(#circleMask)" xlink:href="#spoke"/>
+		<g mask="url(#spokeBorder)">
+			<circle r="15"/>
+			<circle r="100" stroke-width="5"/>
+			<g mask="url(#arcify)" stroke-width="10">
+				<circle r="30"/>
+				<circle r="52.5"/>
+				<circle r="80" stroke-width="20"/>
+			</g>
+		</g>
+	</g>
+</svg>
